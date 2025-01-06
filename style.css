@@ -1,0 +1,837 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar
+{
+    width: 80%;
+    margin: auto;
+    padding: 0px 20px;
+    /* background-color: #09c; */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;   
+    /* z-index: 9; */
+}
+.navbar h2
+{
+    color: crimson;
+}
+.navbar ul
+{
+    /* background-color: rgb(227, 54, 23); */
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar ul li
+{
+    padding: 0px 20px;
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 104px;
+    color: rgba(255, 255, 255, 0.72);
+    transition: color 0.1s ease;
+}
+.navbar ul li:hover a
+{
+    color: white;
+}
+.navbar div span
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(133, 13, 11); */
+    padding-left: 25px;
+}
+.navbar div h3
+{
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+}
+/* header content */
+.header
+{
+    height: 100vh;
+    background-image: url(img/security-service-hero-img-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.layer
+{
+    color: white;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(67, 67, 67, 0.5); */
+    background-color: rgba(37, 39, 45, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+    /* text-align: center; */
+}
+.layer-content
+{
+    width: 50%;
+    /* background-color: blueviolet; */
+    margin-bottom: 60px;
+}
+.layer-content h6
+{
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+}
+.layer-content h1
+{
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 112px;
+    color: rgb(255, 255, 255);
+}
+.layer-content p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: rgb(247, 247, 248);
+}
+.vertical-line
+{
+    width: 500px;
+    height: 0.5px;
+    background-color: #565a61;
+    margin: 50px 0px 40px;
+    /* margin: 30px 0px; */
+}
+.box-contact
+{
+    /* background-color: rgb(135, 35, 17); */
+    display: flex;
+}
+.box-contact-icon div
+{
+    width: 65px;
+    height: 65px;
+    background-color: #f2382c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+
+} 
+.box-contact-icon div i
+{
+    font-size: 30px;
+}
+.box-contact-content
+{
+    /* background-color: blue; */
+    /* font-size: 40px;
+    font-weight: 700; */
+    margin-left: 25px;
+}   
+.box-contact-content .call-us
+{
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgb(255, 255, 255);  
+}
+.box-contact-content .num
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgb(255, 255, 255);
+}
+/* ///////////////////////////////////////////////// */
+
+/* buttom on right */
+.customize
+{
+    width: 120px;
+    height: 50px;
+    background-color: #ffffff;
+    /* position: relative; */
+    top: 35%;
+    left: 100%;
+    transform: translate(-100%);
+    z-index: 99;
+    position: fixed;
+    /* padding: 16px 0px; */
+    /* text-align: center; */
+    cursor: pointer;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+
+    transition: background-color 0.1s ;
+}
+.customize:hover
+{
+    background-color: #2563eb;
+}
+.customize div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow:rgb(81, 81, 81); */
+    box-shadow: (0, 0, 0, 0.06);
+}
+
+.customize div i
+{
+    padding-top: 5px;
+    color: #2563eb;
+    /* padding: 16px; */
+    transition: color 0.1s ;
+}
+.customize:hover i
+{
+    color: white;
+
+}
+.customize div p
+{
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(6, 6, 6);
+    /* padding-right: 15px; */
+    transition: color 0.1s ;
+
+}
+.customize:hover p
+{
+    color: white;
+
+}
+/* ///////////////////////////////////////////////// */
+
+/* activity */
+.activity
+{
+    display: flex;
+}
+
+/* activity-content */
+.activity-content
+{
+    width: 50%;
+    /* background-color: rgb(241, 238, 238); */
+    background-color: #f7f7f8;
+
+}
+/* .container
+{
+    width: 70%;
+    padding: 50px 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+} */
+.container-activity
+{
+    width: 70%;
+    /* background-color: #2563eb; */
+    /* display: flex; */
+    padding: 50px 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.activity-content h2
+{
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62px;
+    color: rgb(37, 39, 45);
+}
+.activity-content p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(86, 90, 97);
+}
+.activity-content .click-here
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    color: #f2382c;
+    transition: color 1s ease;
+    cursor: pointer;
+    letter-spacing: 2px;
+    /* background-color: #0c2a6a; */
+}
+.click-here i
+{
+    opacity: 0.8;
+}
+.click-here:hover
+{
+    color: rgb(37, 39, 45);
+
+}
+
+/* activity-numbers */
+.activity-numbers
+{
+    background-color: #f2382c;
+    width: 50%;
+}
+.activity-numbers h6
+{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+}
+.container-chiled
+{
+    /* background-color: #0c2a6a; */
+}
+.counter-parent
+{
+    display: flex;
+}
+.counter
+{
+    padding: 25px 50px 30px 0px;
+    margin-right: 60px;
+}
+.counter span
+{
+    color: #FFFFFF;
+    font-size: 80px;
+    line-height: 1.2em;
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 96px;
+    color: rgb(255, 255, 255);
+}
+.counter p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+}
+/* ///////////////////////////////////////////////// */
+
+/* service */
+.container-service
+{
+    width: 80%;
+    padding: 50px 0px;
+    margin: 50px auto;
+}
+.tittle
+{
+    /* background-color: #2563eb; */
+    text-align: center;
+}
+.tittle h2
+{
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62px;
+    color: rgb(37, 39, 45);
+}
+.tittle p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(86, 90, 97);
+}
+.service-content
+{
+    /* width: 80%; */
+    /* background-color: #f2382c; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.service-content-box
+{
+    /* background-color: #565a61; */
+    width: 30.33%;
+}
+
+.service-content-box img
+{
+    width: 100%;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+.service-content-box:hover img
+{
+    /* background-color: rgba(255, 255, 255, 0.72); */
+    opacity: 0.8;
+}
+.desc
+{
+    /* background-color: #103585; */
+    padding-top: 30px;
+
+}
+.desc h4
+{
+    cursor: pointer;
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    color: rgb(37, 39, 45);
+}
+.desc p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(86, 90, 97);
+}
+.btn-allservice
+{
+    text-align: center;
+    /* background-color: rgb(84, 8, 8); */
+    /* width: 25%; */
+    margin: 50px auto 0px;
+    
+
+}
+.btn-allservice button
+{
+    font-size: 0.8125rem;
+    border: #f2382c solid 2px;
+    border-radius: 0%;
+    padding-right: 20px;
+    padding: 14px 22px;
+    color: #f2382c;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.btn-allservice:hover button
+{
+    background-color: #f2382c;
+    color: #f2382c;
+}
+/* ///////////////////////////////////////////////// */
+
+/* choose-us */
+.choose-us
+{
+    background-image: url(img/security-service-rank-img-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.choose-us h6
+{
+    font-family: "Heebo", serif;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgb(247, 247, 247);
+}
+.choose-us h2
+{
+    font-family: "Heebo", serif;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62px;
+    color: rgb(255, 255, 255);  
+}
+.layer-choose-us
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 39, 45, 0.7);
+}
+.border-color
+{
+    border-color: #565a61 !important;
+}
+.layer-choose-us .row div i
+{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    Color: rgb(242, 56, 44);
+}
+.layer-choose-us .row div h4
+{
+    font-family: "Heebo", serif;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+}
+.layer-choose-us .row div p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(247, 247, 247);
+}
+/* ///////////////////////////////////////////////// */
+
+/* Testimonial */
+
+.testimonial-pic img
+{
+    width: 40px;
+    height: 40px;
+}
+.testimonial-heading
+{
+    font-family: "Heebo", serif;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62px;
+    color: rgb(37, 39, 45);
+}
+.view-all
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    Color: rgb(242, 56, 44);
+    cursor: pointer;
+    transition: color 1s;
+
+}
+.view-all:hover
+{
+    Color: rgb(37, 39, 45);
+}
+.testimonial-content p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    Color: rgb(37, 39, 45);
+    /* padding-right: 5px; */
+}
+.testimonial-pic div h6
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23px;
+    Color: rgb(37, 39, 45);
+    text-transform: uppercase;
+}
+.testimonial-pic div p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    Color: rgb(86, 90, 97);
+}
+/* ///////////////////////////////////////////////// */
+
+/* Request Info */
+.request-info
+{
+    background-color: #f7f7f8;
+}
+.req-desc h2
+{
+    font-family: "Heebo", serif;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62px;
+    color: rgb(37, 39, 45); 
+    padding-bottom: 30px; 
+}
+.req-desc .para1
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    Color: rgb(37, 39, 45);
+    padding-bottom: 20px; 
+
+}
+.req-desc p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    Color: rgb(86, 90, 97);
+}
+.req-desc div 
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    Color: rgb(86, 90, 97);
+}
+.req-desc div i
+{
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    Color: rgb(242, 56, 44);
+    padding-right: 15px;
+}
+/* input */
+.label-input label
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    Color: rgb(86, 90, 97);
+}
+.label-input label span
+{
+    color: #f2382c;
+}
+.style-input
+{
+    border-radius: 0px !important;
+    background-color: #f7f7f8;
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    Color: rgb(81, 81, 81);
+    padding: .75em;
+}
+/* btn */
+.btn-request
+{
+    text-align: center;
+    /* width: 60%; */
+}
+.btn-request button
+{
+    border: #f2382c solid 2px;
+    border-radius: 0%;
+    padding: 14px 22px;
+    color: #f2382c;
+    transition: all 0.2s;
+    text-transform: uppercase;
+
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 2px;
+
+}
+.btn-request:hover button
+{
+    background-color: #f2382c;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////// */
+
+/* footer */
+.footer
+{
+    background-color: #25272d;
+}
+.footer h2
+{
+    font-family: "Heebo", serif;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 23px;
+    color: rgb(255, 255, 255);
+}
+.footer-p1 img
+{
+    width: 160px;
+    height: 33px;
+} 
+.footer-p1 p
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    Color: rgb(247, 247, 248);
+    padding: 10px 0px 0px;
+}
+.footer-p1 div 
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    Color: rgb(247, 247, 248);
+}
+.footer-p1 .footer-icon
+{
+    margin-right: 10x; 
+    cursor: pointer;
+    transition: color 0s ;
+    font-size: 18px;
+    display: inline-block; /* أو block إذا احتجت */
+    margin-right: 20px;
+}
+.footer-icon:hover
+{
+    color: #dc4e41;;
+}
+.footer-desc
+{
+    padding-top: 20px;
+}
+.footer .footer-desc a
+{
+    text-decoration: none;
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    Color: rgb(247, 247, 248);
+    transition: color 1s;
+}
+.footer-desc a:hover 
+{
+    color: rgb(220, 38, 24);
+}
+.footer .footer-desc p
+{
+    text-decoration: none;
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    Color: rgb(247, 247, 248);
+    transition: color 1s;
+}
+/* border */
+.footer-brdr
+{
+    width: 100%;
+    height: 0.5px;
+    background-color: #565a61;
+}
+/* sec footer */
+.sec-footer
+{
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    Color: rgb(247, 247, 248);
+}
