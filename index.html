@@ -26,27 +26,47 @@
     <title>Security Service</title>
 </head>
 <body>
+
+    
     <!-- navbar -->
     <div class="navbar ">
-        <h2>
-            <a href="#">
-                <img src="img/site-logo-light.svg" alt="logo-light">
-                <!-- <img src="https://websitedemos.net/security-services-02/wp-c…ent/uploads/sites/839/2021/06/site-logo-light.svg" alt="logo-light"> -->
-            </a>
-        </h2>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACTS</a></li>
-        </ul>
-        <div>
-            <span>Have any questions?</span>
-            <h3>+1 123-456-7890</h3>
+        <div class="nav">
+            <h2>
+                <a href="#">
+                    <img src="img/site-logo-light.svg" alt="logo-light">
+                    <!-- <img src="https://websitedemos.net/security-services-02/wp-c…ent/uploads/sites/839/2021/06/site-logo-light.svg" alt="logo-light"> -->
+                </a>
+            </h2>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+            <div class="row ">
+                <span>Have any questions?</span>
+                <h3>+1 123-456-7890</h3>
+            </div>
         </div>
+        
     </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 600) 
+            { // قيمة التمرير
+                navbar.classList.add('scrolled');
+            } else {
+                 navbar.classList.remove('scrolled');
+                }
+        });
+    </script>
     <!-- end navbar -->
 
+
+    
+    
 
     <!-- header content -->
     <div class="header">
@@ -54,12 +74,12 @@
             <div class="layer-content">
                 <h6>15+ YEARS OF EXPERIENCE</h6>
                 <h1>
-                    Better Private <br/>Security
+                    Better Private Security
 
                 </h1>
                 <P>
                     Felis etiam pellentesque scelerisque eleifend in aliquam sed morbi nisl 
-                    <br/>lectus mi proin ultricies quis bibendum.
+                    lectus mi proin ultricies quis bibendum.
                 </P>
                 <div class="vertical-line"></div>
                 <div class="box-contact">
